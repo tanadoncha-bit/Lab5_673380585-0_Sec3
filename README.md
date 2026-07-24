@@ -76,8 +76,8 @@ POST /coffees
 ```bash
 POST http://localhost:8080/coffees
 ```
-```Body
-# ตัวอย่าง
+```bash
+BODY
 {
     "name":"Cappuccino",
     "price":60.0
@@ -94,10 +94,10 @@ PUT /coffees/{id}
 ตัวอย่าง
 
 ```bash
-PUT http://localhost:8080/coffees/{id}
+PUT http://localhost:8080/coffees/2
 ```
-```Body
-# ตัวอย่าง
+```bash
+BODY
 {
     "name":"Latte",
     "price":50
@@ -115,7 +115,7 @@ DELETE /coffees/{id}
 ตัวอย่าง
 
 ```bash
-curl -X DELETE http://localhost:8080/coffees/2
+http://localhost:8080/coffees/3
 ```
 
 ---
