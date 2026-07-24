@@ -35,7 +35,7 @@ http://localhost:8080
 
 ---
 
-## API Endpoints
+## API Endpoints (ใน Postman)
 
 ### 1. ดูเมนูกาแฟทั้งหมด
 
@@ -46,7 +46,7 @@ GET /coffees
 ตัวอย่าง
 
 ```bash
-curl http://localhost:8080/coffees
+GET http://localhost:8080/coffees
 ```
 
 ---
@@ -60,7 +60,7 @@ GET /coffees/{id}
 ตัวอย่าง
 
 ```bash
-curl http://localhost:8080/coffees/1
+GET http://localhost:8080/coffees/1
 ```
 
 ---
@@ -74,11 +74,15 @@ POST /coffees
 ตัวอย่าง
 
 ```bash
-curl -X POST http://localhost:8080/coffees \
--H "Content-Type: application/json" \
--d "{\"name\":\"Mocha\",\"price\":65}"
+POST http://localhost:8080/coffees
 ```
-
+```Body
+# ตัวอย่าง
+{
+    "name":"Cappuccino",
+    "price":60.0
+}
+```
 ---
 
 ### 4. แก้ไขเมนูกาแฟ
@@ -90,9 +94,14 @@ PUT /coffees/{id}
 ตัวอย่าง
 
 ```bash
-curl -X PUT http://localhost:8080/coffees/2 \
--H "Content-Type: application/json" \
--d "{\"name\":\"Latte\",\"price\":50}"
+PUT http://localhost:8080/coffees/{id}
+```
+```Body
+# ตัวอย่าง
+{
+    "name":"Latte",
+    "price":50
+}
 ```
 
 ---
