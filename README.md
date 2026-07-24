@@ -6,7 +6,7 @@ Mini Project รายวิชา **CP353002 – Principles of Software Design 
 
 ## Technology
 - Java 17
-- Spring Boot 3.x
+- Spring Boot 4.1.0
 - Maven
 - REST API
 
